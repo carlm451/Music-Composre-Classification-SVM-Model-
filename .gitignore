@@ -1,0 +1,14 @@
+# tell git to leave data directory and cache files out of repo
+
+.ipynb_checkpoints
+
+# directories
+
+__pycache__/
+
+Bach/
+Brahms/
+Beethoven/
+Schubert/
+
+DataStreamFeatures/
