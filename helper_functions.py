@@ -22,6 +22,25 @@ def make_composer_dict(Composers,data_dir='./Part One Data/Part1(PS1)/'):
 
     return audio_files
 
+def make_composer_WAV_dict(Composers,data_dir='./WAV_Files/'):
+    '''dict of composition files, composers as key 
+
+    Composers: List of Composers
+    dir_path: path to composer folders
+    '''
+
+    audio_files = dict()
+
+    for composer in Composers:
+    
+        dir_path = data_dir + composer + '_Wav/'
+    
+        files = get_audio_files(dir_path)
+    
+        audio_files[composer] = files
+
+    return audio_files
+
 def get_audio_files(dir_path):
     
     files = []
